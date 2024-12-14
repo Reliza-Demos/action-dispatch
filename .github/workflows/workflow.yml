@@ -1,0 +1,12 @@
+on: [push]
+
+name: Hello World on Trigger
+
+jobs:
+  build:
+    name: Build And Push
+    runs-on: ubuntu-latest
+    steps:
+      - id: reliza-build-start 
+        name: Hello World
+        run: echo "hellow-world"
